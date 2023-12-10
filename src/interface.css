@@ -1,0 +1,39 @@
+
+.code-algorithm-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 16px;
+    width: 48%; 
+    margin: 0;
+  }
+  
+  .code-card {
+    background-color: #f8f8f8;
+    text-align: left;
+  }
+  
+  .algorithm-card {
+    background-color: #ffffff;
+    text-align: left;
+  }
+  
+  h2 {
+    color: #333333;
+  }
+  
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
