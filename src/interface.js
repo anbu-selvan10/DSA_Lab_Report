@@ -128,16 +128,18 @@ Return Non-Null Result:
 
 const CodeAlgorithmCard = () => {
   return (
-    <div>
+    <div className="animatedbg">
+        <br/>
         <div>
-            <h1>BST to Greater Sum Tree</h1>
+            <h1 className="title"><u>DSA LAB REPORT</u></h1>
+            <h2><b>1.BST to Greater Sum Tree</b></h2>
             <div className="code-algorithm-container">
             <div className="card code-card">
-                <h2>Code</h2>
+                <h2><i>Code:</i></h2>
                 <pre>{code1}</pre>
             </div>
             <div className="card algorithm-card">
-                <h2>Algorithm</h2>
+                <h2><i>Algorithm:</i></h2>
                 <pre>{algo1}</pre>
             </div>
             </div>
@@ -145,14 +147,14 @@ const CodeAlgorithmCard = () => {
         </div>
         <br />
         <div>
-            <h1>BST Maximum Path Sum</h1>
+            <h2>2.BST Maximum Path Sum</h2>
             <div className="code-algorithm-container">
             <div className="card code-card">
-                <h2>Code</h2>
+                <h2><i>Code:</i></h2>
                 <pre>{code2}</pre>
             </div>
             <div className="card algorithm-card">
-                <h2>Algorithm</h2>
+                <h2><i>Algorithm:</i></h2>
                 <pre>{algo2}</pre>
             </div>
             </div>
@@ -160,14 +162,14 @@ const CodeAlgorithmCard = () => {
         </div>
         <br />
         <div>
-            <h1>Lowest Common Ancestor of a BST</h1>
+            <h2>3.Lowest Common Ancestor of a BST</h2>
             <div className="code-algorithm-container">
             <div className="card code-card">
-                <h2>Code</h2>
+                <h2><i>Code:</i></h2>
                 <pre>{code3}</pre>
             </div>
             <div className="card algorithm-card">
-                <h2>Algorithm</h2>
+                <h2><i>Algorithm:</i></h2>
                 <pre>{algo3}</pre>
             </div>
             </div>

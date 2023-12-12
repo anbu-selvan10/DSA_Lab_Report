@@ -24,9 +24,7 @@
     text-align: left;
   }
   
-  h2 {
-    color: #333333;
-  }
+ 
   
   pre {
     white-space: pre-wrap;
@@ -42,4 +40,36 @@
     height: auto;
     margin-top: 10px;
   }
-  
+
+.animatedbg {
+    background: linear-gradient(45deg, #3498db, #e74c3c, #9b59b6, #2ecc71);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  background-color: #f9f9f9; 
+  padding: 16px; 
+  margin: 16px; 
+}
+
+
+.code-image{
+
+  border:3px solid #000000;
+}
