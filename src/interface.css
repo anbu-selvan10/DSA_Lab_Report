@@ -36,4 +36,10 @@
     line-height: 1.5;
     margin: 0;
   }
+
+  .code-image{
+    max-width: 50%;
+    height: auto;
+    margin-top: 10px;
+  }
   

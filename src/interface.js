@@ -129,40 +129,49 @@ Return Non-Null Result:
 const CodeAlgorithmCard = () => {
   return (
     <div>
-        <h1>BST to Greater Sum Tree</h1>
-        <div className="code-algorithm-container">
-        <div className="card code-card">
-            <h2>Code</h2>
-            <pre>{code1}</pre>
-        </div>
-        <div className="card algorithm-card">
-            <h2>Algorithm</h2>
-            <pre>{algo1}</pre>
-        </div>
-        </div>
-        <br />
-        <h1>BST Maximum Path Sum</h1>
-        <div className="code-algorithm-container">
-        <div className="card code-card">
-            <h2>Code</h2>
-            <pre>{code2}</pre>
-        </div>
-        <div className="card algorithm-card">
-            <h2>Algorithm</h2>
-            <pre>{algo2}</pre>
-        </div>
+        <div>
+            <h1>BST to Greater Sum Tree</h1>
+            <div className="code-algorithm-container">
+            <div className="card code-card">
+                <h2>Code</h2>
+                <pre>{code1}</pre>
+            </div>
+            <div className="card algorithm-card">
+                <h2>Algorithm</h2>
+                <pre>{algo1}</pre>
+            </div>
+            </div>
+            <img src={require('./images/gst.png')} className='code-image'/>
         </div>
         <br />
-        <h1>Lowest Common Ancestor of a BST</h1>
-        <div className="code-algorithm-container">
-        <div className="card code-card">
-            <h2>Code</h2>
-            <pre>{code3}</pre>
+        <div>
+            <h1>BST Maximum Path Sum</h1>
+            <div className="code-algorithm-container">
+            <div className="card code-card">
+                <h2>Code</h2>
+                <pre>{code2}</pre>
+            </div>
+            <div className="card algorithm-card">
+                <h2>Algorithm</h2>
+                <pre>{algo2}</pre>
+            </div>
+            </div>
+            <img src={require('./images/mps.png')} className='code-image'/>
         </div>
-        <div className="card algorithm-card">
-            <h2>Algorithm</h2>
-            <pre>{algo3}</pre>
-        </div>
+        <br />
+        <div>
+            <h1>Lowest Common Ancestor of a BST</h1>
+            <div className="code-algorithm-container">
+            <div className="card code-card">
+                <h2>Code</h2>
+                <pre>{code3}</pre>
+            </div>
+            <div className="card algorithm-card">
+                <h2>Algorithm</h2>
+                <pre>{algo3}</pre>
+            </div>
+            </div>
+            <img src={require('./images/lca.jpg')} className='code-image'/>
         </div>
     </div>
   );
