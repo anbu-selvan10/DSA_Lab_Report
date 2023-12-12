@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import './interface.css';
 
 const code1 = `
@@ -127,6 +128,12 @@ Return Non-Null Result:
 `;
 
 const CodeAlgorithmCard = () => {
+    const [isButtonClicked, setButtonClicked] = useState(false);
+
+    const handleButtonClick = () => {
+    setButtonClicked(true);
+    };
+
   return (
     <div className="animatedbg">
         <br/>
@@ -144,6 +151,17 @@ const CodeAlgorithmCard = () => {
             </div>
             </div>
             <img src={require('./images/gst.png')} className='code-image'/>
+            <br />
+            {isButtonClicked ? (
+            <video width="640" height="360" controls>
+                <source src={require('./videos/gst_vid.mp4')} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            ) : (
+            <button type="submit" onClick={handleButtonClick}>
+                Visualization with explanation
+            </button>
+            )}
         </div>
         <br />
         <div>
@@ -159,6 +177,8 @@ const CodeAlgorithmCard = () => {
             </div>
             </div>
             <img src={require('./images/mps.png')} className='code-image'/>
+            <br />
+            <button type='submit'>Visualization with explanation</button>
         </div>
         <br />
         <div>
@@ -174,6 +194,8 @@ const CodeAlgorithmCard = () => {
             </div>
             </div>
             <img src={require('./images/lca.jpg')} className='code-image'/>
+            <br />
+            <button type='submit'>Visualization with explanation</button>
         </div>
     </div>
   );
