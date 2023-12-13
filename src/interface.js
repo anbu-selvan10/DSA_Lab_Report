@@ -195,7 +195,17 @@ const CodeAlgorithmCard = () => {
                     Visualization with explanation
                 </button>
                 )}
-            
+            <hr />   
+            {isButtonClicked02 ? (
+                <div>
+                <p>TC: The time complexity of the given maxPathSum function is O(N), where N is the number of nodes in the binary tree. This is because the function traverses each node once, and at each node, a constant amount of work is done.</p>
+                <p>The space complexity is O(H), where H is the height of the binary tree. This is due to the recursive nature of the maxSumHelper function, which would result in a maximum of H function calls on the call stack at any given time, where H is the height of the tree. If it is a balanced tree, space complexity will be O(logN) and for worst case (skewed tree) it will be O(N).</p>
+                </div>
+                ) : (
+                <button type="submit" onClick={handleButtonClick02}>
+                    Time and Space Complexity Analysis
+                </button>
+                )}
         </div>
         <br />
         <div>
@@ -222,6 +232,18 @@ const CodeAlgorithmCard = () => {
                 Visualization with explanation
             </button>
             )}
+            <hr />   
+            {isButtonClicked03 ? (
+                <div>
+                <p>TC: The time complexity of the lowestCommonAncestor function is O(h), where h is the height of the binary search tree (BST). The reason is that the function traverses the height of the tree, and in the worst case, the height of the tree is h.</p>
+                <p>SC: The space complexity is O(h) as well, due to the recursive nature of the algorithm. The space required on the call stack is proportional to the height of the tree. In the worst case, where the tree is skewed, the height h approaches the number of nodes in the tree, resulting in O(h) space complexity.</p>
+                <p>NOTE: In the best case, the time and space complexity would be O(log N). In the worst case (skewed tree), the time and space complexity would be O(N). </p>
+                </div>
+                ) : (
+                <button type="submit" onClick={handleButtonClick03}>
+                    Time and Space Complexity Analysis
+                </button>
+                )}
         </div>
     </div>
   );
